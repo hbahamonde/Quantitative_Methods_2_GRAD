@@ -17,6 +17,7 @@
 \usepackage{marvosym} % face package
 \usepackage{xcolor,color}
  \usepackage{fontawesome}
+ \usepackage{amssymb}
 
 % Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
@@ -25,7 +26,7 @@
 \usepackage[sc,osf]{mathpazo}
 
 % Set your name here
-\def\name{POS 7113 Graduate Research Methods II}
+\def\name{POS 7113: Quantitative Research Methodology II}
 
 % Replace this with a link to your CV if you like, or set it empty
 % (as in \def\footerlink{}) to remove the link in the footer:
@@ -115,7 +116,7 @@
 \hspace{4cm}\begin{minipage}{0.45\linewidth}
   \begin{tabular}{ll}
 {\bf Last updated}: \today. \\
- {\bf Download last version} \href{https://github.com/hbahamonde/Comparative_Politics_UGRAD/raw/master/Bahamonde_Comparative_Politics_Syllabus_UGRAD.pdf}{here}.\\
+ {\bf Download last version} \href{https://github.com/hbahamonde/Quantitative_Methods_2_GRAD/raw/master/Bahamonde_Quantitative_Methods_2_GRAD.pdf}{here}.\\
   {\bf {\color{red}{\scriptsize Not intended as a definitive version}}} %\\
     \\
     \\
@@ -129,20 +130,24 @@
 {\bf Professor}: Hector Bahamonde\\
 %\texttt{e:}\href{mailto:hbahamonde@tulane.edu}{\texttt{hbahamonde@tulane.edu}}\\
 \texttt{e:}\href{mailto:\filetext}{\texttt{\filetext}}\\
-\texttt{w:}\href{http://www.hectorbahamonde.com}{\texttt{www.hectorbahamonde.com}}\\
-{\bf Class meetings}: \texttt{MWF} 8:00-8:50.\\
-{\bf Location}: Stanley Thomas Hall 302.\\
-{\bf Office Hours}: Make an appointment \href{https://calendly.com/bahamonde/officehours}{\texttt{here}}.\\
-{\bf Class Website and Materials}: \href{https://tulane.instructure.com/courses/2170180}{\texttt{Canvas}}.
+\texttt{w:}\href{http://www.hectorbahamonde.com}{\texttt{www.HectorBahamonde.com}}\\
+{\bf Class meetings}: \texttt{DAY} TIME.\\
+{\bf Location}: TBA.\\
+{\bf Office Hours}: Make an appointment \href{https://calendly.com/bahamonde/officehours}{\texttt{here}}.%\\
+%{\bf Class Website and Materials}: \href{https://tulane.instructure.com/courses/2170180}{\texttt{Canvas}}.
 
 \subsection*{Overview and Objectives}
 
-What is the influence of income on the probability of voting? Is there any systematic relationship between democracy and trade? Is it true that correlation does not imply causation? To consider these kind of statements in a rigorous way we will learn a technique called \emph{ordinary least regression}, the workhorse of applied quantitative methodology in social sciences. At the end of the course you will become an educated consumer and producer of quantitative analysis. 
-
-This {\bf {\color{blue}graduate-level course}} offers an introduction to linear models in political science. This course will hopefully prepare you for the things you will encounter when you (attempt to) publish quantitative work with linear models. This course will provide you with a systematic approach to assessing, fixing and presenting your linear model results. Though we focus almost exclusively on linear models, some nonlinear models will also be introduced. During the semester, we will focus on a number of assumptions, applications, violations to those assumptions, and their corresponding solutions. Finally, it is the intention of this course to be both theoretically relevant and practically oriented at the same time. As you will quickly realize, you will ``learn by doing.'' Besides learning quantitative methodology, you will also learn a number of computer skills, mainly {\bf R} and \LaTeX. Therefore, if you are not already with those tools, try to be patient with your self.
+\emph{What is the influence of income on the probability of voting? Is there any systematic relationship between democracy and trade? Is it true that correlation does not imply causation?} To consider these kind of statements in a rigorous way we will learn a technique called \emph{ordinary least regression}, the workhorse of applied quantitative methodology in social sciences. At the end of the course you will become an educated consumer and producer of quantitative analysis. 
 \\
 \\
-I hope this course catches your attention, in the expectation that you continue taking more methods/computing courses. Most of all, I hope you see how applied statistics are both an art and a science. {\bf Welcome!}
+This {\bf {\color{blue}graduate-level course}} offers an introduction to linear models in political science. This course will hopefully prepare you for the things you will encounter when you (attempt to) publish quantitative work with linear models. This course will provide you with a systematic approach to assessing, fixing and presenting your linear model results. Though we focus almost exclusively on linear models, some nonlinear models will also be introduced. 
+\\
+\\
+During the semester, we will focus on a number of assumptions, applications, violations to those assumptions, and their corresponding solutions. It is the intention of this course to be both theoretically relevant and practically oriented at the same time. As you will quickly realize, you will ``learn by doing.'' Besides learning quantitative methodology, you will also learn a number of computer skills, mainly {\bf R} and \LaTeX. Therefore, if you are not already with those tools, try to be patient with your self.
+\\
+\\
+I hope this course catches your attention, in the expectation that you continue taking more methods and/or computing courses. Most of all, I hope you see how applied statistics are both an art and a science. {\bf Welcome!}
 
 \subsection*{Prerequisites}
 
@@ -152,7 +157,9 @@ There are no formal prerequisites for this course. Only good predisposition to l
 
 \subsection*{Software}
 
-It is not enough to just read about statistics. The best way to learn it is by \emph{doing}. For this reason, in this course you will sit in the driving seat and actually estimate (a lot of) statistical models using \texttt{R}. \texttt{R} is free and compatible with essentially all kinds of machines. I suggest a \texttt{R} interphase called \texttt{R-Studio}. One of {\bf R}'s main virtues from the grad-student point of view is that the base package and all of the add-ons (called ``packages'' in {\bf R}) are free. You can download the base package of R from the \emph{Comprehensive R Archive Network} (\emph{CRAN}) \href{http://www.cran.r-project.org}{website}. 
+It is not enough to just \emph{read} about statistics. The best way to learn applied statistics is by \emph{doing}. For this reason, in this course you will sit in the driving seat and actually estimate (a lot of) statistical models using {\bf R}. {\bf R} is free and compatible with essentially all kinds of machines. One of {\bf R}'s main virtues from the grad-student point of view is that the base package and all of the add-ons (called ``packages'' in {\bf R}) are free. You can download the base package of R from the \emph{Comprehensive R Archive Network} (\emph{CRAN}) \href{http://www.cran.r-project.org}{website}.  
+
+You can find a virtually endless set of resources for {\bf R} on the Internet, including this \href{http://scs.math.yorku.ca/index.php/R:_Getting_started_with_R}{Getting Started With R} page. If you are completely new to {\bf R}, you should complete this online short course, \href{http://tryr.codeschool.com/}{Try R}. Finally, I suggest a {\bf R} interphase called \texttt{RStudio}. \href{https://www.rstudio.com/products/rstudio/download/}{RStudio} makes {\bf R} easier to use. It includes a code editor, debugging and visualization tools.
 \\
 \\
 Quantitative methodology is not only about estimating the ``best'' model (if such a thing even exists) but also about presenting your results in an effective way. For this reason, all problem sets and final presentations should be carried out in \LaTeX. \LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. \LaTeX is the \emph{de facto} standard for the communication and publication of scientific documents. Download the last version \href{https://www.latex-project.org/get/}{here}.
@@ -160,8 +167,12 @@ Quantitative methodology is not only about estimating the ``best'' model (if suc
 \\
 You are free to use other softwares such as \texttt{STATA}, \texttt{MathLab}, \texttt{SAS}, etc. However, I might provide assistance only for the former. That said, all in-class examples are going to be taught in \texttt{R}, which is by far the most common statistical tool nowadays. 
 
+\subsection*{Course Texts}
 
-
+\begin{itemize}
+	\item[$\bullet$] Fox, John. (2015) Applied Regression Analysis and Generalized Linear Models. 3rd ed. Thousand Oaks, CA: Sage Publications, Inc.
+	\item[$\bullet$] Fox, John and Sanford Weisberg. (2011) An R Companion to Applied Regression. 2nd ed. Thousand Oaks, CA: Sage Publications, Inc.
+\end{itemize}
 
 
 \subsection*{Course Learning Objectives}
@@ -169,19 +180,15 @@ You are free to use other softwares such as \texttt{STATA}, \texttt{MathLab}, \t
 Upon successful completion of this course, you will be able to:
 
 \begin{itemize}
-	\item[$\bullet$] Acquire an understanding of the main comparative politics theories and topics.
-	\item[$\bullet$] Use the comparative method and analysis in the political science literature.
-	\item[$\bullet$] Consume `critically' the comparative politics literature.
+	\item[$\bullet$] Acquire an understanding of the main tools related to linear regression.
+	\item[$\bullet$] Use the linear method up to the point where you feel comfortable doing analysis in your own research.
+	\item[$\bullet$] Consume \emph{critically} methodological-oriented literature.
 \end{itemize}
 
 
-\subsection*{Course Texts}
 
 
-\begin{itemize}
-	\item[$\bullet$] Fox, John. (2015) Applied Regression Analysis and Generalized Linear Models. 3rd ed. Thousand Oaks, CA: Sage Publications, Inc.
-	\item[$\bullet$] Fox, John and Sanford Weisberg. (2011) An R Companion to Applied Regression. 2nd ed. Thousand Oaks, CA: Sage Publications, Inc.
-\end{itemize}
+
 
 
 
@@ -192,7 +199,7 @@ Upon successful completion of this course, you will be able to:
 	\item[$\bullet$] Please, do not eat during class. Beverages are fine.
 	\item[$\bullet$] No computers, phones, or any other electronic devices may be used in lecture for any reason---no exceptions. Any such devices on your person must be off (e.g., not merely on silent) and put completely away. Those who do not respect this requirement will be asked to leave class.
 	\item[$\bullet$] Attendance is mandatory (and part of your participation grade). If you missed a class, please get the notes from another student. I do not offer make up sessions for students who are absent.
-	\item[$\bullet$] Please, follow the `Email Etiquette' I have \href{http://www.hectorbahamonde.com/resources/}{posted} in my website.
+	\item[$\bullet$] Please, follow the \emph{Email Etiquette} I have \href{http://www.hectorbahamonde.com/resources/}{posted} in my website.
 \end{itemize}
 
 
@@ -202,7 +209,7 @@ Upon successful completion of this course, you will be able to:
 \begin{enumerate}
 
 	% Participation
-	\item {\bf Readings, Participation, Attendance and Pop quizzes}: 15 \%.
+	\item {\bf Problem Sets}: 15 \%.
 	\\
 	\\
 	I expect you to keep up with the readings over the course of the semester. I employ an interactive lecture style, and you will need to have done the readings in order to participate. There will be a number of pop quizzes during the semester, particularly during the first part of the semester.  Quizzes will be short (3-5 minutes), completed at any point of the class, and designed to make sure everyone is keeping up with the readings and lecture. There will be no make-up quizzes. If you are absent (or late) from class that day, you will get a $0$ on that quiz. 
@@ -215,31 +222,38 @@ Upon successful completion of this course, you will be able to:
 
 
 	% midterm
-	\item {\bf One in-class midterm exam, \underline{March 2}}: 25 \%. 
+	\item {\bf Student Project, \underline{Date}}: 50 \%. 
 	\\
 	\\
-	You must take the exam at the scheduled time. There will be no make-ups, unless you have a documented medical excuse. (Documented) Medical excuses are the only type of exceptions that will be accepted.
+	An empirical paper that applies methods learned in this class to a research question of their choice. The paper should be 10-15 pages in length and focus on the research question, data, empirical strategy, results, and conclusions. Literature reviews, background, lengthy motivations, etc. should be omitted or may be included as an appendix. 
 	\\
 	\\
-	The exam will be a closed-book exam, covering material from the entire semester, {\bf up to February 23}. The format of the exam will be discussed on February 23, when we will review the material for the test. Please note, exam questions will be drawn \emph{both} from the readings \emph{and} lectures.
+	You should be able to convince me that your empirical strategy is solid. For that, you should provide graphs, tables, robustness checks, among other tools. 
+	\\
+	\\
+	The paper should be very clear about the kind of model used, and it should use proper mathematical notation. The paper should be written in \LaTeX. Documents in \emph{Word} will not be accepted.
+	\\
+	\\
+	You also need to submit a copy of your {\bf R} code. I should be able to replicate your exact results. That is, I should be able to hit ``run'' in \emph{RStudio} and obtain the exact same output. Failure to replicate your results will discount points out of grade.
+	\\
+	\\
+	Students are free to choose any topic they want. As long as it has a strong data-analytical component, it's fine by me. I strongly advice you to get the data in advance. As you will quickly realize, the real world does not work as when you do homeworks, e.g. the data you will originally find, will be messy, with lots of inconsistencies, variables will not be labeled, among other programs. My advice: \emph{start early}.
 
 
 	% essay
-	\item {\bf An essay of 6-8 pages in length, \underline{March 23}}: 25\%. 
+	\item {\bf Problem Sets, \underline{Date}}: 30\%. 
 	\\
 	\\
-	I take writing very seriously. I therefore strongly suggest that you begin your essay early, edit multiple drafts, and proofread carefully before turning it in. Grammar, diction, and style all shape the effectiveness of your writing and, as a result, will affect your grade. Consult William Strunk, Jr., and E. B. White, \emph{The Elements of Style}, for helpful hints regarding written expression. Joseph M. Williams and Gregory G. Colomb, The Craft of Argument (New York: Longman, 2003), provides an excellent overview of the art of effective persuasive writing.
+	This is a methodological course, developing skills in understanding and applying statistical methods. You can only learn statistics by doing statistics and therefore the homework for this course is extensive, including weekly homework assignments. The assignments consist of analytical problems, computer simulations, and data analysis. 
 	\\
 	\\
-	Topics will be assigned by me on {\bf March 5}. The essay is due in hard copy at the beginning of class, and no later than 8.15 am on {\bf March 23}. Turning it in before the due date is OK, but \emph{not} afterwards. {\bf Late essays will not be accepted, and will be graded with a $0$}. There will \emph{not} be exceptions or extensions. No electronic copies of any kind will be accepted.
-	\\
-	\\
-	I encourage you to see me in my office hours \emph{before} the due date. If you want, \href{mailto:\filetext}{send me} your draft via email, then \href{https://calendly.com/bahamonde/officehours}{make an appointment}. That way I will be able to give you feedback on your work before the due date. If you want to receive comments from me, please allow plenty of time for me to read your draft, and time to meet you. Consider also that your classmates will do the same. Consequently, plan accordingly.
+	In this section you will learn how to recode a variable, merge datasets, summarize variables, plot a distribution, among other more theoretical issues. And while we will not focus on mathematical proofs, you will spend time thinking about and working on the mechanics of linear regression.
 
-	\item {\bf One cumulative in-class final exam}: 35 \%. 
+
+	\item {\bf Final Exam}: 20 \%. 
 	\\
 	\\
-	The cumulative final exam will be a closed-book exam covering material from the entire semester. The format of the exam will be discussed by the end of the semester. Exam questions will be drawn both from the readings and lectures. The final exam is set by the registrar. Hence, both place and time are TBA. There will not be exceptions. We will also schedule an in-class review session for {\bf April 27}.
+	There will be a single, take-home final exam in the course that will require that you apply the knowledge gained in the course to particular methodological problem. The format of the exam will be discussed by the end of the semester. However, you can expect the test to be an exercise in guided replication and primarily involves data analysis and interpretation.	Exam questions will be drawn both from the readings and lectures. The final exam is set by the registrar. Hence, both place and time are TBA. There will not be exceptions. We will also schedule an in-class review session for {\bf date}. 
 
 \end{enumerate}
 
@@ -279,349 +293,275 @@ I have an open-doors policy, feel free to stop by my office at any time. However
 
 \subsection*{Schedule}
 
+
+Each entry represents a single topic. Readings are designated either as suggested ($\star$) or supplemental (-). This should serve as a nice reference to which you can return if the intricacies of a particular topic have faded from your memory.
+
+
 \begin{enumerate}
 
-\item[] {\bf Introduction}
-	\begin{itemize}
-		\item {\bf January 17}
-			\begin{itemize}
-				\item[$\bullet$] Overview of syllabus, course requirements, and introduction to the course
-			\end{itemize}
-	\end{itemize}
 
+	\item Preliminary Material
 
-\item {\bf Comparative Politics as a Methodology/Subfield}
-	\begin{itemize}
-		\item {\bf January 19: `Scratching the Surface'}
 		\begin{itemize}
-			\item[$\bullet$] Arend Lijphart. Comparative Politics and the Comparative Method. American Political Science Review, 65(3), 682-693. \texttt{DOI:10.2307/1955513}. \url{https://www.cambridge.org/core/journals/american-political-science-review/article/comparative-politics-and-the-comparative-method/A326138E114805EF7E1B72F60EBD4295}.
-			\item[$\bullet$] Gerardo Munck and Richard Snyder. Debating the Direction of Comparative Politics: An Analysis of Leading Journals. Comparative Political Studies, 40(1):5-31, 2007.
-		\end{itemize}
-		
-		\item {\bf January 22: `An Important Debate'}
-			\begin{itemize}
-				\item[$\bullet$] James Mahoney. Debating the State of Comparative Politics: Views From Qualitative Research. Comparative Political Studies, 40(1):32-38, 2007. DOI: \texttt{10.1177/0010414006294816}. URL: \url{http://cps.sagepub.com/cgi/doi/10.1177/0010414006294816}.
-				% better assign this one in the future. or at least, include this piece regardless.
-				%\item[$\bullet$] James Mahoney. A Tale of Two Cultures: Contrasting Quantitative and Qualitative Research. Political Analysis, 14(3): 227-249.
-				\item[$\bullet$] Barbara Geddes. How the Cases You Choose Affect the Answers You Get: Selection Bias in Comparative Politics. Political Analysis, 2(1):131-150, 1990.
-			\end{itemize}
-
-		\item {\bf January 24: `Two Important Concepts'}
-			\begin{itemize}	
-				\item[$\bullet$] Giovanni Capoccia and Daniel Kelemen. The Study of Critical Junctures Theory, Narrative, and Counterfactuals in Historical Institutionalism. World Politics, 59(April):341-369, 2007.
-				% Assign this too: Clio and the Economics of QWERTY. It's 5 pages short.
-				\item[$\bullet$] Gerardo Munck and Jay Verkuilen. Conceptualizing and Measuring Democracy: Evaluating Alternative Indices. Comparative Political Studies, 35(1):5-34, 2002.
-			\end{itemize}
-
-
-
-		\item {\bf January 26: `Gaining Perspective': Why and How Do We Compare?}
-			\begin{itemize}	
-				\item[$\bullet$] In-class video lecture. (1) {\bf Institutions and Historical Experiments}: \href{https://www.youtube.com/watch?v=jsZDlBU36n0}{`Why Nations Fails,' by James Robinson}. (2) {\bf Genes and `Natural' Experiments}: \href{https://www.youtube.com/watch?v=mVVeCOuh7FQ}{`The Genetics of Politics,' by Rose McDermott} [no readings assigned].
-			\end{itemize}
-
-	\end{itemize}
-
-
-\item {\bf The State}
-	\begin{itemize}
-		%\item[$\bullet$] \emph{Principles}. Ch. 4.
-		
-	\item {\bf January 29: `The Origins: Theory and Empirics'}
-		\begin{itemize} 
-			\item[$\bullet$] Mancur Olson. Dictatorship, Democracy, and Development. The American Political Science Review, 87(3): 567-576, 1993. DOI: \texttt{10.2307/2938736}. \url{http://www.jstor.org/stable/2938736}.
-			\item[$\bullet$] Tilly, Charles. 1985. `War Making as Organized Crime.' In \emph{Bringing the State Back In} edited by P. Evans, D. Rueschemeyer and T. Skocpol. New York: Cambridge University Press.\\
-			{\color{brown}[\faGlobe: {\bf Europe}].}
-		\end{itemize}
-		
-
-	\item {\bf January 31: `Beyond Europe'}
-		\begin{itemize} 
-			\item[$\bullet$] Miguel Angel Centeno. Blood and Debt: War and Taxation in Nineteenth-Century Latin America. American Journal of Sociology, 102(6):1565-1605, 1997.\\
-			{\color{brown}[\faGlobe: {\bf Latin America}].}
-
-			\item[$\bullet$] Francis Fukuyama. Reflections on Chinese Governance. Journal of Chinese Governance, 1(3):379-391, 2016. DOI: \texttt{10.1080/23812346.2016.1212522}. URL: \url{https://www.tandfonline.com/doi/full/10.1080/23812346.2016.1212522}\\
-			{\color{brown}[\faGlobe: {\bf China}].}
-
-		\end{itemize}
-
-	\item {\bf  February 2: `Gaining Perspective': What Do Political Theorists Have to Say?}
-		\begin{itemize} 
-			\item[$\bullet$] Short lecture about Hobbes and Locke by the professor [no readings assigned].
+			\item[$\star$] Fox (2015), Chapters 1 \& 2.
+			\item[$\star$] Fox and Weisberg (2011), Chapters 1 \& 2.
 		\end{itemize}
 
 
-	\item {\bf February 5: `The \emph{Infrastructural} Power of the State'}
+	\item OLS II: Effective Presentation
+
 		\begin{itemize}
-			\item[$\bullet$] Michael Mann. The Autonomous Power of the State: Its Origins, Mechanisms and Results. European Journal of Sociology, 25(2): 109-136, 1984. DOI: \texttt{10.1017/S0003975600004239}.
-			\item[$\bullet$] Dan Slater. Can Leviathan be Democratic? Competitive Elections, Robust Mass Politics, and State Infrastructural Power. Studies in Comparative International Development, 43(3-4): 252-272, 2008. DOI: \texttt{10.1007/s12116-008-9026-8}. \url{http://link.springer.com/10.1007/s12116-008-9026-8}.\\
-			{\color{brown}[\faGlobe: {\bf Southeast Asia}].}
+			\item[$\square$] Factors and contrasts; quasi-variances and graphical displays 
+			\item[$\square$] Interactions and effect displays
+			\item[$\square$] Standardization and relative importance
+		\end{itemize}
+
+
+		\begin{itemize}
+			\item[$\star$] Armstrong II (2013)
+			\item[$\star$] Berry, Golder and Milton (2012)
+			\item[$\star$] Silber, Rosenbaum and Ross (1995) 
+			\item[-] Brambor, Clark and Golder (2006) 
+			\item[-] Braumoeller (2004)
+			\item[-] Firth and Menzes (2004)
+			\item[-] Kam and Franzese (2007)
 
 		\end{itemize}
-	\end{itemize}
 
-
-
- 
-
-\item {\bf Political Regimes: Democracy}
-	\begin{itemize}
-		\item {\bf February 7: Pre-Modern and Contemporaneous Comparative Exercises}
-			\begin{itemize}
-				\item[$\bullet$] Aristotle. \href{https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/aristotle/Politics.pdf}{The Politics}. Book III (1-8).%, Book IV (1-12), Book 5 (1-4). // Include these next time.
-				\item[$\bullet$] Arend Lijphart. \href{https://e-edu.nbu.bg/pluginfile.php/830138/mod_resource/content/1/Lijphart%2C%20A.%20Patterns%20of%20Democracy%20-%20Government%20Forms%20and%20Performance%20in%20Thirty-Six%20Countries%20%282012%29.pdf}{Patterns of Democracy: Government Forms and Performance in Thirty-Six Countries}. Yale University Press, 2nd edition, 2012. Chapters 1-3. % next time: organize a debate between parliamentary v. presidential regimes (perhaps add more bibliography.)
-			\end{itemize}
-	\end{itemize}
-
-
-\vspace{3mm}{\bf {\color{blue}February 9 to February 14: Mardi Gras Break. Have fun, see you February 16.}}\vspace{3mm}
-
-\begin{itemize}
-
-		\item {\bf February 16: Hybrid Regimes (1)}
-			\begin{itemize}
-				\item[$\bullet$] Steven Levitsky and Lucan Way. \href{http://muse.jhu.edu/article/17196}{The Rise of Competitive Authoritarianism}. Journal of Democracy, 13(2):51-65, 2002. DOI: \texttt{10.1353/jod.2002.0026}.
-				\item[$\bullet$] `Gaining Perspective' (1): In-class movie about Mexico's PRI. `Herod's Law' (Mexico, 1999)\\
-			{\color{brown}[\faGlobe: {\bf Mexico}].}
-
-			\end{itemize}
-
-		\item {\bf February 19: Hybrid Regimes (2)}
-			\begin{itemize}
-				\item[$\bullet$] `Gaining Perspective' (2): In-class movie about Mexico's PRI. `Herod's Law' (Mexico, 1999) [no readings assigned].\\
-			{\color{brown}[\faGlobe: {\bf Mexico}].}
-
-			\end{itemize}
-
-
-
-		\item {\bf February 21: Concepts, A Methodological Addendum}
-			\begin{itemize}
-				\item[$\bullet$] Giovanni Sartori. Concept Misformation in Comparative Politics. The American Political Science Review, 64(4):1033-1053, 1970.
-				\item[$\bullet$] David Collier and Steven Levitsky. Democracy with Adjectives: Conceptual Innovation in Comparative Politics. World Politics, 49(April):430-451, 1997.
-			\end{itemize}
-		
 	
-	\end{itemize}
+	\item In-class Lab I
 
-\vspace{3mm}{\bf {\color{blue}Midterm Review: February 23 (No readings, bring your questions).}}\vspace{3mm}
-
-	\begin{center}$\uparrow$ {\color{blue}For the test, keep calm, and study everything that's above} $\uparrow$\end{center}
-	\begin{center}\Smiley{{\color{blue}You can do this}}\Smiley{}\end{center}
-
-
-	\begin{itemize} 
-		\item[] {\bf February 26: Why do we care?}
-			\begin{itemize} 
-				\item[$\bullet$] Daron Acemoglu and James Robinson. \emph{Why Nations Fail: The Origins of Power, Prosperity, and Poverty}, 2012. Ch. 3.
-			\end{itemize}
-	\end{itemize}
-
-	\begin{itemize} 
-		\item {\bf February 28: Does Democracy Make a Difference?}
-			\begin{itemize} 
-				%\item[$\bullet$] Principles, Ch. 9, Democracy or Dictatorship: Does It Make a Difference? 
-				%\item[$\bullet$] Principles, Ch. 11, Problems with Group Decision Making.
-				%\item[$\bullet$] Daron Acemoglu, Suresh Naidu, Pascual Restrepo, and James Robinson. Democracy Does Cause Growth. Technical report, National Bureau of Economic Research, Cambridge, MA, URL: \url{http://www.nber.org/papers/w20004.pdf}.
-				\item[$\bullet$] Adam Przeworski and Fernando Limongi. Political Regimes and Economic Growth. Journal of Economic Perspectives, 7(3): 51-69, 1993. DOI: \texttt{10.1257/jep.7.3.51}. \url{http://pubs.aeaweb.org/doi/abs/10.1257/jep.7.3.51}.
-				\item[$\bullet$] Michael Ross. Is Democracy Good for the Poor? American Journal of Political Science, 50(4):860-874,  2006. DOI: \texttt{10.1111/j.1540-5907.2006.00220.x}. URL: \url{http://doi.wiley.com/10.1111/j.1540-5907.2006.00220.x}.
-			\end{itemize}
-	\end{itemize}
-
-
-\vspace{2mm}{\bf {\color{blue}March 2: Midterm, same classroom, same time.}}\vspace{2mm}\\
-\vspace{2mm}{\bf {\color{blue}March 5: Distribute Essay Topics and Instructions in Class.}}\vspace{2mm}
-
-
-\item {\bf Democracy: Different Determinants and Explanations}
-	\begin{itemize} {\bf March 5: Modernization Theory}
-	%	\item
-				\begin{itemize}
-					\item[$\bullet$] Seymour Martin Lipset. Some Social Requisites of Democracy: Economic Development and Political Legitimacy. The American Political Science Review, 53(1):69-105, 1959.
-					\item[$\bullet$] Adam Przeworski and Fernando Limongi. Modernization: Theories and Facts. World Politics, 49(2):155-183, 1997.
-				\end{itemize}
-
-		\item {\bf March 7: Social Origins of Democracy}
-				\begin{itemize}
-					\item[$\bullet$] Barrington Moore, Jr., \emph{Social Origins of Dictatorship and Democracy}, Beacon, 1964. Preface, Chs. 1 and 7.\\
-			{\color{brown}[\faGlobe: {\bf England}].}
-
-				\end{itemize}
-
-		\item {\bf March 9: `Gaining Perspective': The Glorious Revolution in England}:
-				\begin{itemize}
-					\item[$\bullet$] \href{https://www.youtube.com/watch?v=_m0VG01w6lU}{Documentary} in class [no readings assigned].
-				\end{itemize}
-
-		\item {\bf March 12: Economic Origins of Democracy}
- 				\begin{itemize}
-					\item[$\bullet$] Daron Acemoglu and James Robinson. Economic Origins of Dictatorship and Democracy, Cambridge, 2013. Chp. 1 and 2.
-				\end{itemize}
-
-		\item {\bf March 14: `An Important Debate'}
- 				\begin{itemize}
-					\item[$\bullet$] Carles Boix. Democracy and Redistribution, Cambridge, 2003. Introduction and Ch. 3 ('Historical Evidence').
-					\item[$\bullet$] Stephan Haggard and Robert Kaufman. Inequality and Regime Change: Democratic Transitions and the Stability of Democratic Rule. American Political Science Review, 106(3): 495-516, 2012.
-				\end{itemize}
-
-		\item {\bf March 16: `Gaining Perspective': Movie `NO.'}
- 				\begin{itemize}
-					\item[$\bullet$] In-class movie about the Chilean transition to democracy [no readings assigned].\\
-			{\color{brown}[\faGlobe: {\bf Chile}].}
-
-				\end{itemize}
-
-	\end{itemize}
-
-
-
-
-		%\item[$\bullet$] Principles, Ch. 6, The Economic Determinants of Democracy and Dictatorship
-		%\item[$\bullet$] Principles, Ch. 7, Cultural Determinants of Democracy and Dictatorship
-		%\item[$\bullet$] Daron Acemoglu and James Robinson. Why Did The West Extend The Franchise? Democracy, Inequality, and Growth in Historical Perspective. The Quarterly Journal of Economics, 115(4):1167-1199, 2000. DOI: \texttt{10.1162/003355300555042}.
-		%\item[$\bullet$] Guillermo O'Donnell. Modernization and Bureaucratic-Authoritarianism: Studies in South American Politics. Univ of California Intl, 1973. Pages TBA.
-		%\item[$\bullet$] Joseph Wright, Erica Frantz, Barbara Geddes. Oil and Autocratic Regime Survival. (2013):1-20, sep 2013. \url{http://www.journals.cambridge.org/abstract S0007123413000252}. British Journal of Political Science, DOI: \texttt{10.1017/S0007123413000252}.
-	%\end{itemize}
-
-
-
-\item {\bf Political Regimes: Authoritarianism}
-\begin{itemize}	
-	\item {\bf March 19: Surveying Authoritarian Regimes}
 			\begin{itemize}
-				\item[$\bullet$] Barbara Geddes. What Do We Know About Democratization After Twenty Years? Annual Review of Political Science, 2:115-144, 1999
-				\item[$\bullet$] Stephen Haber. \href{http://www.oxfordhandbooks.com/oxford/downloaddoclightbox/$002f10.1093$002foxfordhb$002f9780199548477.001.0001$002foxfordhb-9780199548477-e-038/Authoritarian$0020Government;jsessionid=2E89E3A5EE542CF1CE7583F64EFD4C17?nojs=true}{Authoritarian Government}. In \emph{The Oxford Handbook of Political Economy}, Oxford, 2009. 
+				\item[$\square$] Factors and contrasts.
+				\item[$\square$] Interactions.
+				\item[$\square$] Relative Importance.
 			\end{itemize}
 
+	\item Linearity: Diagnostics, Transformations and Polynomials 
 
-	\item {\bf March 21: Authoritarian Survival}
 			\begin{itemize}
-				\item[$\bullet$] Bruce Bueno de Mesquita and Alastair Smith. Dictator's Handbook, Why Bad Behavior Is Almost Always Good Politics. Public Affairs, 2012. Ch. 3 `Staying in Power.'
-				\item[$\bullet$] Beatriz Magaloni. Credible Power-Sharing and the Longevity of Authoritarian Rule. Comparative Political Studies, 41(4-5):715-741, 2008. DOI: \texttt{10.1177/0010414007313124}. URL: \url{http://cps.sagepub.com/cgi/content/abstract/41/4-5/715}.
+				\item[$\square$] Diagnosing linearity through residual plots.
+				\item[$\square$] Fixing non-linearity with data transformations and polynomials.
+				\item[$\square$] Linearity and ordinal variables.
 			\end{itemize}
-\end{itemize}
 
 
-
-\vspace{2mm}{\bf {\color{blue}March 23: Paper Due At 8.00 (Central Time) in Hard Copy.}}\vspace{2mm}
-
-
-\begin{itemize}
-	\item {\bf March 23: `Gaining Perspective': Documentary `How To Stage a Coup'}
 			\begin{itemize}
-				\item[$\bullet$] In-class documentary about the most iconic coups in history [no readings assigned].
+				\item[$\star$] Fox (2015) Chapters 4 \& 12 (Sections 12.3-12.5) 
+				\item[$\star$] Fox and Weisberg (2011) Chapter 3
+				\item[$\star$] Jacoby (1999)
+				\item[-] Box and Tidwell (1962)
+				\item[-] Breiman and Friedman (1985a,b), Pregibon and Vardi (1985), Buja and Kass (1985), Fowlkes and Kettering (1985)
 			\end{itemize}
-\end{itemize}
 
 
-\vspace{2mm}{\bf {\color{blue}Spring Break. Have fun. In the meantime, professor will be presenting at the \emph{Western Political Science Association Conference} in San Francisco.}}\vspace{2mm}
+	\item Re-sampling Techniques and Regression
 
-
-\vspace{1mm}{\bf {\color{blue}Professor will be at the \emph{Midwest Political Science Association Conference} in Chicago. See you April 11.}}\vspace{1mm}
-
-
-		%\item[$\bullet$] Carles Boix and Susan Stokes. Endogenous Democratization. World Politics, 55 (4):517-549, 2003.
-		%\item[$\bullet$] Ben Ansell and David Samuels. Inequality and Democratization: A Contractarian Approach. Comparative Political Studies, 43(12):1543-1574, 2010. DOI: \texttt{10.1177/0010414010376915}. URL: \url{http://cps.sagepub.com/cgi/doi/10.1177/0010414010376915}.
-		%\item[$\bullet$] Milan Svolik. Authoritarian Reversals and Democratic Consolidation. American Political Science Review, 102(2):153-168, 2008. DOI: \texttt{10.1017/S0003055408080143}. URL: \url{http://www.journals.cambridge.org/abstract S0003055408080143}.
-
-
-
-\item {\bf Parties and Elections}
-	\begin{itemize} 
-		\item {\bf April 11: Origins and Consequences of Electoral Systems}
-			\begin{itemize} 
-				\item[$\bullet$] Carles Boix. Setting the Rules of the Game: The Choice of Electoral Systems in Advanced Democracies. The American Political Science Review, 93(3):609-624, 1999. ISSN 1556-5068. DOI: \texttt{10.2139/ssrn.159213}. URL: \url{http://www.ssrn.com/abstract=159213}.
-				\item[$\bullet$] Arend Lijphart. The Political Consequences of Electoral Laws, 1945-85. The American Political Science Review, 84(2):481-496, 1990.
-			\end{itemize}
-		%\item[$\bullet$] Principles, Ch. 13, Elections and Electoral Systems. 
-		%\item[$\bullet$] Principles, Ch. 14, Social Cleavages and Party Systems.
-		%\item[$\bullet$] Seymour Martin Lipset and Stein Rokkan. Party Systems and Voter Alignments: Cross-National Perspectives. Free Press, 1967. Pages TBA.
-		\item {\bf April 13: `Gaining Perspective': U.S. Elections In Historical Perspective}
 			\begin{itemize}
-				\item[$\bullet$] TBA. Tentative: In-class video lecture ``\href{https://www.youtube.com/watch?v=gF8CJSQf238}{Democracy's Failure to Perform},'' by Francis Fukuyama (28:51 onwards).\\
-			{\color{brown}[\faGlobe: {\bf United States}].}
+				\item[$\square$] Bootstrapping and Jackknifing.
+				\item[$\square$] Cross-validation.
 			\end{itemize}
-	\end{itemize}
 
 
-\item {\bf Parties and Elections: Selected Topics}
-	\begin{itemize} 
-		\item {\bf April 16: Clientelism and Vote-Buying}
-		\begin{itemize}
-			\item[$\bullet$] Herbert Kitschelt. Linkages between Citizens and Politicians in Democratic Polities. Comparative Political Studies, 33(6-7):845-879, sep 2000. ISSN 0010-4140. DOI: \texttt{10.1177/001041400003300607}. URL: \url{http://cps.sagepub.com/cgi/doi/10.1177/001041400003300607}.
-			\item[$\bullet$] Javier Auyero. The Logic of Clientelism in Argentina: An Ethnographic Account. Latin American Research Review, 35(3):55-81, 2000. URL: \url{http://www.jstor.org/stable/2692042}.\\
-			{\color{brown}[\faGlobe: {\bf Argentina}].}
-
-		\end{itemize}
-	\end{itemize}
-
-
-	\begin{itemize} 
-		\item {\bf April 18: Comparative Political Behavior}
-		\begin{itemize}
-			\item[$\bullet$] Richard Lau, Parina Patel, Dalia Fahmy, and Robert Kaufman. Correct Voting Across Thirty-Three Democracies: A Preliminary Analysis. British Journal of Political Science, 44(02):239-259, 2013. DOI: \texttt{10.1017/S0007123412000610}. URL: \url{http://www.journals.cambridge.org/abstract S0007123412000610}.
-			\item[$\bullet$] Ryan Carlin, Gregory Love and Elizabeth Zechmeister. \href{ http://www.jstor.org/stable/43664117}{Trust Shaken: Earthquake Damage, State Capacity, and Interpersonal Trust in Comparative Perspective}. Comparative Politics, 46(4), 419-437, 2014.
-		\end{itemize}
-	\end{itemize}
-
-
-	\begin{itemize} 
-		\item {\bf April 20: `Gaining Perspective': Street Politics, Bribery, and Political Violence in New Jersey}
-		\begin{itemize}
-			\item[$\bullet$] In-class documentary `Street Fight' about the 2002 mayoral race in Newark, New Jersey [no readings assigned].\\
-			{\color{brown}[\faGlobe: {\bf United States}].}
-		\end{itemize}
-	\end{itemize}
-
-
-
-
-\item {\bf Development and Colonialism}
-	\begin{itemize}
-		\item {\bf April 23: Competing Causes of Development (1)}
-		\begin{itemize}
-			\item[$\bullet$] John Gallup, Jeffrey Sachs, and Andrew Mellinger. Geography and Economic Development. Technical report, National Bureau of Economic Research, Cambridge, MA, 1998. URL: \url{http://www.nber.org/papers/w6849.pdf}.
-
-			\item[$\bullet$] Daron Acemoglu, Simon Johnson, and James Robinson. Reversal Fortune: Geography and Institutions in the Making of the Modern World Income Distribution. The Quarterly Journal of Economics, 117(4):1231-1294, 2002.
-		\end{itemize}
-
-		\item {\bf April 25: Competing Causes of Development (2)}
 			\begin{itemize}
-				\item[$\bullet$] Kenneth Sokoloff and Stanley Engerman. History Lessons: Institutions, Factor Endowments, and Paths of Development in the New World. Journal of Economic Perspectives, 14(3):217-232, 2000. DOI: \texttt{10.1257/jep.14.3.217}. URL: \url{http://pubs.aeaweb.org/doi/abs/10.1257/jep.14.3.217}.
-		%\item[$\bullet$] Daron Acemoglu, Simon Johnson, and James Robinson. The Colonial Origins of Comparative Development: An Empirical Investigation. American Economic Review, 91(5):1369-1401, 2001. DOI: \texttt{10.1257/aer.91.5.1369}. URL: \url{http://pubs.aeaweb.org/doi/abs/10.1257/aer.91.5.1369}.
-				\item[$\bullet$] Matthew Lange, James Mahoney, and Matthias vom Hau. Colonialism and Development: A Comparative Analysis of Spanish and British Colonies. American Journal of Sociology, 111(5):1412-1462, 2006. DOI: \texttt{10.1086/499510}. URL: \url{http://www.journals.uchicago.edu/doi/10.1086/499510}.
-		\end{itemize}
-	\end{itemize}
-  
+				\item[$\star$] Fox (2015) Chapter 21
+				\item[-] Stone (1974)
+				\item[-] Efron and Tibshirani (1993)
+				\item[-] Davison and Hinkley (1997)
+				\item[-] Ronchetti, Field and Blanchard (1997)
+			\end{itemize}
 
 
-\vspace{2mm}{\bf {\color{blue}April 27: Review for Final Exam. Bring your questions. No readings assigned.}}\vspace{2mm}
+	\item Model Selection
 
-	\begin{center}$\uparrow$ {\color{blue}For the final exam, keep extra calm, and study everything that's above} $\uparrow$\end{center}
-	\begin{center}\Smiley{{\color{blue}You can do this}}\Smiley{}\end{center}
 
-\vspace{2mm}{\bf {\color{blue}Final Exam (Date TBA).}}\vspace{2mm}
+			\begin{itemize}
+				\item[$\square$] Theoretical issues in model searching and post-data model construction.
+				\item[$\square$] Model selection criteria and multi-model inference.
+				\item[$\square$] Subset selection models.
+			\end{itemize}
 
-%\item {\bf Political Violence}
-%	\begin{itemize}
-%		\item[$\bullet$] Fearon, James D., and David D. Laitin. 2003. Ethnicity, Insurgency, and Civil War. American Political Science Review 97 (1):75-90.
-%		\item[$\bullet$] Wilkinson, Steven I. 2004. Votes and Violence: Electoral Competition and Ethnic Riots in India. Cambridge: Cambridge University Press, Chapters 1 and 2.
-%	\end{itemize}
 
-%\item {\bf Ideas v. Structure v. Psychology}
-%	\begin{itemize}
-%		\item[$\bullet$] Ana De La O and Jonathan Rodden. Does Religion Distract the Poor?: Income and Issue Voting Around the World. Comparative Political Studies, 41(4-5):437-476, 2008. DOI: \texttt{10.1177/0010414007313114}. URL: \url{http://cps.sagepub.com/cgi/doi/10.1177/0010414007313114}.
-%		\item[$\bullet$] David Laitin. National Revivals and Violence. European Journal of Sociology, 36(01):3, 1995. DOI: \texttt{10.1017/S0003975600007098}. URL: \url{http://www.journals.cambridge.org/abstract S0003975600007098}.
-%		\item[$\bullet$] David Stasavage. Representation and Consent: Why They Arose in Europe and Not Elsewhere. Annual Review of Political Science, 19(1):145-162, 2016. DOI: \texttt{10.1146/annurev-polisci-043014-105648}. URL: \url{http://www.annualreviews.org/doi/abs/10.1146/annurev-polisci-043014-105648 http://www.annualreviews.org/doi/10.1146/annurev-polisci-043014-105648}.
-%		\item[$\bullet$] Gian Vittorio, Claudio Barbaranelli, and Philip Zimbardo. Profiles Personality and Political Parties. Political Psychology, 20(1):175-197, 1999.
+			\begin{itemize}
+				\item[$\star$] Fox (2015) Chapter 22
+				\item[$\star$] Leamer (1983)
+				\item[$\star$] Burnham and Anderson (2004)
+				\item[$\star$] Leamer and Leonard (1983)
+				\item[$\star$] Box (1976), Box and Hunter (1962)
+				\item[-] Freedman (1991b,a), Berk (1991), Blalock (1991), Mason (1991) 
+				\item[-] Miller (2002), Breiman (1992), Breiman and Spector (1992)
+			\end{itemize}
 
-%	\end{itemize}
+
+	\item Non-Linearity, Smoothing and Splines
+
+
+			\begin{itemize}
+				\item[$\square$] Nonparametric Smoothing - Lowess.
+				\item[$\square$] Inference for regression smoothers.
+				\item[$\square$] Regression Splines.
+				\item[$\square$] Generalized Additive Models.
+			\end{itemize}
+
+
+			\begin{itemize}
+				\item[$\star$] Fox (2015) Chapters 17 \& 18 
+				\item[$\star$] James et al. (2013) Chapter 7 
+				\item[-] Keele (2008) Chapters 2-6
+			\end{itemize}
+
+
+
+	\item Flexible Models: Tree-based Regression, Multivariate Adaptive Regression Splines
+
+
+
+			\begin{itemize}
+				\item[$\square$] Fundamentals of flexible models.
+				\item[$\square$] Automatic variable selection.
+				\item[$\square$] Inference and effects in statistical learning models.
+				\item[$\square$] When (and when not) to use these kinds of models.
+			\end{itemize}
+
+
+			\begin{itemize}
+				\item[$\star$] Montgomery and Olivella (forthcoming) 
+				\item[$\star$] James et al. (2013) Chapter 7
+				\item[$\star$] Berk (2016) Section 3.14
+			\end{itemize}
+
+
+
+
+	\item In-Class Lab II
+
+			\begin{itemize}
+				\item[$\square$] Non-linearity transformations.
+				\item[$\square$] Polynomials.
+				\item[$\square$] Smoothers and splines.
+				\item[$\square$] Trees and other flexible methods.
+			\end{itemize}
+
+
+
+	\item Regression Discontinuity Designs
+
+			\begin{itemize}
+				\item[$\star$] Cattaneo, Idrobo and Titiunik (2017).
+				\item[$\star$] Calonico, Cattaneo and Titiunik (2015) .
+				\item[$\star$] Keele (2015).
+				\item[$\star$] Sekhon and Titiunik (2016).
+			\end{itemize}
+
+
+
+	\item Finite Mixture Models
+
+
+			\begin{itemize}
+				\item[$\star$] Imai and Tingley (Forthcoming).
+				\item[$\star$] Grun and Leisch (2008).
+				\item[$\star$] Grun and Leisch (2007).
+			\end{itemize}
+
+	\item Missing Data and Multiple Imputation 
+
+			\begin{itemize}
+				\item[$\square$] Whats the problem with missing data? 
+				\item[$\square$] When can we fix it?
+				\item[$\square$] How do we impute the data and use those imputations?
+			\end{itemize}
+
+
+
+			\begin{itemize}
+				\item[$\star$] Fox (2015) Chapter 20
+				\item[$\star$] van Buuren and Groothuis-Oudshoorn (2011) 
+				\item[$\star$] Honaker and King (2010) 
+				\item[$\star$] Cranmer and Gill (2013)
+				\item[$\star$] Akande, Li and Reiter (forthcoming)
+				\item[$\star$] Xia and Yang (2016)
+				\item[$\star$] Resseguier, Giorgi and Paoletti (2011)
+				\item[-] Schafer (1997)
+				\item[-] Rubin (1987)
+			\end{itemize}
+
+	
+
+	\item In-class Lab IV
+
+			\begin{itemize}
+				\item[$\square$] RDD.
+				\item[$\square$] Mixture Models.
+				\item[$\square$] Missing Data and Multiple Imputation.
+			\end{itemize}
+
+
+
+
+	\item Outliers and Influential Data: Diagnostics
+
+
+			\begin{itemize}
+				\item[$\square$] Outliers, leverage and influential data.
+				\item[$\square$] Hat values, standardized residuals, Cook's D.
+				\item[$\square$] M-estimation (and extension) and iterative re-weighted least squares.
+				\item[$\square$] Diagnostics for outliers revisited.
+			\end{itemize}
+
+
+			\begin{itemize}
+				\item[$\star$] Fox (2015) Chapter 11.
+				\item[$\star$] Fox and Weisberg (2011) Chapter 6 (pp 101-201).
+				\item[$\star$] Andersen (2008).
+				\item[$\star$] Fox (2015) Chapter 19.
+				\item[-] Cantoni and Ronchetti (2001).
+				\item[-] Rousseeuw and Leroy (1987).
+				\item[-] Jasso (1985, 1996), Kahn and Udry (1986).
+			\end{itemize}
+
+
+
+	\item Non-constant error variance and collinearity: Diagnostics and Fixes
+
+
+			\begin{itemize}
+				\item[$\square$] Residual plots.
+				\item[$\square$] ML transformations of Y.
+				\item[$\square$] Weighted least squares.
+				\item[$\square$] Heteroskedastic linear regression.
+				\item[$\square$] Robust standard errors.
+			\end{itemize}
+
+
+
+			\begin{itemize}
+				\item[$\star$] Fox (2015) Chapters 12 \& 13.
+				\item[$\star$] Fox and Weisberg (2011) Chapters 3 \& 6.
+				\item[$\star$] Long and Ervin (2000).
+				\item[$\star$] King and Roberts (2015).
+				\item[-] Harvey (1976).
+				\item[-] Cribari-Neto (2004), Cribari-Neto, Souza and Vasconcellos (2007), Cribari-Neto and da Silva (2011).
+			\end{itemize}
+
+
+
+	\item Critiques of the Linear Regression Model
+
+			\begin{itemize}
+				\item[$\square$] How important are the assumptions behind OLS Regression? 
+				\item[$\square$] How should we appropriately use regression models?
+				\item[$\square$] The importance of sampling to inference.
+			\end{itemize}
+
+
+
+			\begin{itemize}
+				\item[$\star$] Berk (2004).
+			\end{itemize}
 
 
 \end{enumerate}
-
-
- 
 
 
 
