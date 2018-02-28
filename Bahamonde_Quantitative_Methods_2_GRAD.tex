@@ -138,7 +138,7 @@
 
 \subsection*{Overview and Objectives}
 
-\emph{What is the influence of income on the probability of voting? Is there any systematic relationship between democracy and trade? Is it true that correlation does not imply causation?} To consider these kind of statements in a rigorous way we will learn a technique called \emph{ordinary least regression}, the workhorse of applied quantitative methodology in social sciences. At the end of the course you will become an educated consumer and producer of quantitative analysis. 
+\emph{What is the influence of income on the probability of voting? Is there any systematic relationship between democracy and trade? Is it true that correlation does not imply causation?} To consider these kind of statements in a rigorous way, we will learn a technique called \emph{ordinary least regression}, the workhorse of applied quantitative methodology in social sciences. Additionally, the course provides in-depth, hands-on training in statistical techniques and research methodologies used across the social and behavioral sciences. At the end of the course you will become an educated consumer and producer of quantitative analysis.
 \\
 \\
 This {\bf {\color{blue}graduate-level course}} offers an introduction to linear models in political science. This course will hopefully prepare you for the things you will encounter when you (attempt to) publish quantitative work with linear models. This course will provide you with a systematic approach to assessing, fixing and presenting your linear model results. Though we focus almost exclusively on linear models, some nonlinear models will also be introduced. 
@@ -148,6 +148,14 @@ During the semester, we will focus on a number of assumptions, applications, vio
 \\
 \\
 I hope this course catches your attention, in the expectation that you continue taking more methods and/or computing courses. Most of all, I hope you see how applied statistics are both an art and a science. {\bf Welcome!}
+
+
+
+\subsection*{Methodology}
+
+This is a 42-hours {\bf {\color{blue}independent study}} which will take place between the weeks of {\bf July 2} and {\bf August 20}. In these {\bf 8 weeks}, the student will meet the professor {\bf twice a week}. Each meeting will cover one item from the schedule \autoref{schedule}.  Since there are 16 topics to be covered, they will be distributed in 8 weeks, in $\frac{16}{8}=2$ weekly meetings. Each meeting will last 2.5 hours. 2.5 hours $\times$ 2 weekly meetings $\times$ 8 weeks $=$ 40 hours. There are two hours to spare during the 8-weeks period, which will be used to solve additional questions, and computational issues. The emphasis of each meeting will cover both the assigned readings, and the applied-computational components. During the meetings, applied examples will be given, particularly, regarding applications to political science. 
+
+
 
 \subsection*{Prerequisites}
 
@@ -165,7 +173,7 @@ You can find a virtually endless set of resources for {\bf R} on the Internet, i
 Quantitative methodology is not only about estimating the ``best'' model (if such a thing even exists) but also about presenting your results in an effective way. For this reason, all problem sets and final presentations should be carried out in \LaTeX. \LaTeX\, is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. \LaTeX\, is the \emph{de facto} standard for the communication and publication of scientific documents. Download the last version \href{https://www.latex-,roject.org/get/}{here}.
 \\
 \\
-You are free to use other softwares such as \texttt{STATA}, \texttt{MathLab}, \texttt{SAS}, etc. However, I might provide assistance only for the former. That said, all in-class examples are going to be taught in \texttt{R}, which is by far the most common statistical tool nowadays. 
+You are free to use other softwares such as \texttt{STATA}, \texttt{MathLab}, \texttt{SAS}, etc. However, I might provide assistance only for the former. That said, all in-class examples are going to be taught in {\bf R}, which is by far the most common statistical tool nowadays. 
 
 \subsection*{Course Texts}
 
@@ -187,20 +195,6 @@ Upon successful completion of this course, you will be able to:
 
 
 
-
-
-
-
-
-\subsection*{Classroom Etiquette}
- 
-
-\begin{itemize}
-	\item[$\bullet$] Please, do not eat during class. Beverages are fine.
-	\item[$\bullet$] Phones may not be used in lecture for any reason---no exceptions. Any such devices on your person must be off (e.g., not merely on silent) and put completely away. Those who do not respect this requirement will be asked to leave class.
-	\item[$\bullet$] Attendance is mandatory (and part of your participation grade). If you missed a class, please get the notes from another student. I do \emph{not} offer make up sessions for students who are absent.
-	\item[$\bullet$] Please, follow the \emph{Email Etiquette} I have \href{http://www.hectorbahamonde.com/resources/}{posted} in my website.
-\end{itemize}
 
 
 
@@ -278,10 +272,10 @@ I have an open-doors policy, feel free to stop by my office at any time. However
 
 
 
-\subsection*{Schedule}
+\subsection*{Schedule\label{schedule}}
 
 
-Each entry represents a single topic. Readings are designated either as suggested ($\star$) or supplemental (-). This should serve as a nice reference to which you can return if the intricacies of a particular topic have faded from your memory.
+Each entry represents a single topic. Readings are designated either as required ($\star$) or supplemental (-). This should serve as a nice reference to which you can return if the intricacies of a particular topic have faded from your memory.
 
 
 \begin{enumerate}
@@ -316,7 +310,7 @@ Each entry represents a single topic. Readings are designated either as suggeste
 		\end{itemize}
 
 	
-	\item In-class Lab I
+	\item Self-guided Replication Computational Exercise
 
 			\begin{itemize}
 				\item[$\square$] Factors and contrasts.
@@ -420,7 +414,7 @@ Each entry represents a single topic. Readings are designated either as suggeste
 
 
 
-	\item In-Class Lab II
+	\item Self-guided Replication Computational Exercise
 
 			\begin{itemize}
 				\item[$\square$] Non-linearity transformations.
@@ -475,7 +469,7 @@ Each entry represents a single topic. Readings are designated either as suggeste
 
 	
 
-	\item In-class Lab IV
+	\item Self-guided Replication Computational Exercise
 
 			\begin{itemize}
 				\item[$\square$] RDD.
@@ -551,12 +545,179 @@ Each entry represents a single topic. Readings are designated either as suggeste
 \end{enumerate}
 
 
-
-
-
-
-
-
+\newpage
+\subsection*{References}
+Akande, Olanrewaju, Fan Li and Jerome Reiter. forthcoming. An Empirical Comparison of Multiple Imputation Methods for Categorical Data. The American Statistician.
+\\
+\\
+Andersen, Robert. 2008. Modern Methods for Robust Regression. Thousand Oaks, CA: Sage.
+\\
+\\
+Armstrong II, David A. 2013. factorplot: Improving Presentation of Simple Contrasts in GLMs. The R Journal 5(2):4-15.
+\\
+\\
+Berk, Richard A. 1991. Toward a Methodology for Mere Mortals. Sociological Methodology 21:315-324.
+\\
+\\
+Berk, Richard A. 2004. Regression Analysis: A Constructive Critique. Thousand Oaks, CA: Sage.
+\\
+\\
+Berk, Richard A. 2016. Statistical Learning from a Regression Perspective, 2nd ed. Switzerland: Springer.
+\\
+\\
+Berry, William, Matt Golder and Daniel Milton. 2012. Improving Tests of Theories Positing Interaction. Journal of Politics 74(3):653-671.
+\\
+\\
+Blalock, Hubert M. 1991. Are There Really Any Constructive Alternatives to Causal Modeling? Sociological Methodology 21:325-335.
+\\
+\\
+Box, George E. P. 1976. Science and Statistics. Journal of the American Statistical Association 71(356):791-799.
+\\
+\\
+Box, George E. P. and William G. Hunter. 1962. A Useful Method for Model-Building. Technometrics 4(3):301-318.
+\\
+\\
+Box, George and P.W. Tidwell. 1962. Transformation of the Independent Variables. Technometrics 4:531-550.
+\\
+\\
+Brambor, Thomas, William Clark and Matt Golder. 2006. Understanding Interaction Models: Improving Empirical Analyses. Political Analysis 14(1):63-82.
+\\
+\\
+Braumoeller, Bear F. 2004. Hypothesis Testing and Multiplicative Interaction Terms. International Organization 58(4):807-820.
+\\
+\\
+Breiman, Leo. 1992. The Little Bootstrap and Other Methods for DImensionality Se- lection in Regression: X-Fixed Prediction Error. Journal of the American Statistical Association 87(419):738-754.
+\\
+\\
+Breiman, Leo and Jerome H. Friedman. 1985a. Estimating Optimal Transformations for Multiple Regression and Correlation. Journal of the American Statistical Association 80(391):580-598.
+\\
+\\
+Breiman, Leo and Jerome H. Friedman. 1985b. Estimating Optimal Transformations for Multiple Regression and Correlation: Rejoinder. Journal of the American Statistical Association 80(391):614-619.
+\\
+\\
+Breiman, Leo and Philip Spector. 1992. Submodel Selection and Evaluation in Regres- sion. The X-Random Case. Internation Statistical Review 60(3):291-319.
+\\
+\\
+Buja, Andreas and Robert E. Kass. 1985. Estimating Optimal Transformations for Multiple Regression and Correlation: Comment. Journal of the American Statistical Association 80(391):602-607.
+\\
+\\
+Burnham, Kenneth P. and David R. Anderson. 2004. Multimodel Inference: Understand- ing AIC and BIC in Model Selection. Sociological Methods and Research 33(2):261- 304.
+\\
+\\
+Calonico, Sebastian, Matias D. Cattaneo and Rocio Titiunik. 2015. rdrobust: An R Package for Robust Nonparametric Inference in Regression-Discontinuity Designs. The R Journal 7(1):38-51.
+\\
+\\
+Cantoni, Gustavo E. and Elvezio Ronchetti. 2001. Robust Inference for Generalized Linear Models. Journal of the American Statistical Association 96:1022-1030.
+\\
+\\
+Cattaneo, Matias D., Nicolas Idrobo and Rocio Titiunik. 2017. A Practical Introduction to Regression Discontinuity Designs.. Working Manuscript.
+\\
+\\
+Cranmer, Skyler J. and Jeff Gill. 2013. We Have to Be Discrete About This: A Non- Parametric Imputation Technique for Missing Categorical Data. British Journal of Political Science 43:425-449.
+\\
+\\
+Cribari-Neto, Francisco. 2004. Asymptotic Inference Under Heteroskedasticity of Un- known Form. Computational Statistics and Data Analysis 45:215-233.
+\\
+\\
+Cribari-Neto, Francisco, Tatiene C. Souza and Klaus L.P. Vasconcellos. 2007. Inference Under Heteroskedasticity and Leveraged Data. Communications in Statistics - Theory and Methods 36(10):1877-1888.
+\\
+\\
+Cribari-Neto, Francisco and Wilton Bernardino da Silva. 2011. A New Heteroskedasticity-consistent Covariance Matrix Estimator for the Linear Regression Model. Advances in Statistical Analysis 95(1):129-146.
+\\
+\\
+Davison, Anthony C. and D.V. Hinkley. 1997. Bootstrap Methods and Their Applications. Cambridge: Cambridge University Press.
+\\
+\\
+Efron, Bradley and Robert Tibshirani. 1993. An Introduction to the Bootstrap. New York: Chapman \& Hall.
+\\
+\\
+Firth, David and Renee X. De Menzes. 2004. Quasi-Variances. Biometrika 91(1):65-80.
+\\
+\\
+Fowlkes, E.B. and J.R. Kettering. 1985. Estimating Optimal Transformations for Mul- tiple Regression and Correlation: Comment. Journal of the American Statistical As- sociation 80(391):607-613.
+\\
+\\
+Fox, John. 2015. Applied Regression Analysis and Generalized Linear Models, 3rd edition. Thousand Oaks, CA: Sage, Inc.
+\\
+\\
+Fox, John and Sanford Weisberg. 2011. An R Companion to Applied Regression, 2nd ed. Thousand Oaks, CA: Sage.
+\\
+\\
+Freedman, David A. 1991a. A Rejoinder to Berk, Blalock and Mason. Sociological Methodology 21:353-358.
+\\
+\\
+Freedman, David A. 1991b. Statistical Models and Shoe Leather. Sociological Methodology 21:291-313.
+\\
+\\
+Grun, Bettina and Friedrich Leisch. 2007. Fitting Finite Mixtures of Generalized Linear Regressions in R. Computational Statistics \& Data Analysis 51(11):5247-5252.
+\\
+\\
+Grun, Bettina and Friedrich Leisch. 2008. FlexMix Version 2: Finite Mixtures with Concomitant Variables and Varying and Constant Parameters. Journal of Statistical Software 28(4):1-35.
+\\
+\\
+Harvey, Andrew C. 1976. Estimating Regression Models with Multiplicative Heteroskedasticity. Econometrica 44(3):461-465.
+\\
+\\
+Honaker, James and Gary King. 2010. What to Do about Missing Values in Time-Series Cross-Section Data. American Journal of Political Science 54(2):561-581.
+\\
+\\
+Imai, Kosuke and Dusting Tingley. Forthcoming. A Statistical Method for Empirical Testing of Competing Theories. American Journal of Political Science x(x):xxx-xxx.
+\\
+\\
+Jacoby, William G. 1999. Levels of Measurement and Political Research: An Optimistic View. American Journal of Political Science 43(1):271-301.
+\\
+\\
+James, Gareth, Daniela Witten, Trevor Hastie and Robert Tibshirani. 2013. An Introduction to Statistical Learning with Applications in R. New York, NY: Springer.
+\\
+\\
+Jasso, Guillermina. 1985. Marital Coital Frequency and the Passage of Time: Estimating the Separate Effects of Spouses' Ages and Marital Duration, Birth and Marriage Cohorts, and Period Influences. American Sociological Review 50(2):224-241.
+\\
+\\
+Jasso, Guillermina. 1996. Is It Outlier Deletion or is it Sample Truncation? Notes on Science and Sexuality. American Sociological Review 51(5):738-742.
+\\
+\\
+Kahn, Joan R. and J. Richard Udry. 1986. Marital Coital Frequency: Unnoticed Outliers and Unspecified Interactions Lead to Erroneous Conclusions. American Sociological Review 51(5):734-737.
+\\
+\\
+Kam, Cindy and Robert J. Franzese. 2007. Modeling and Interpreting Interactive Hy- potheses in Regression Analyses. Ann Arbor: University of Michigan Press.
+\\
+\\
+Keele, Luke J. 2008. Semi-parametric Regression for the Social Sciences. New York: Wiley \& Sons, Inc.
+\\
+\\
+Keele, Luke J. 2015. Geographic Boundaries as Regression Discontinuities. Political Analysis 23:127-155.
+\\
+\\
+King, Gary and Margaret E. Roberts. 2015. How Robust Standard Errors Expose Methodological Problems They Do Not Fix, and What to Do About It. Political Analysis 23(2):159-179.
+\\
+\\
+Leamer, Edward E. 1983. Let's Take the Con Out of Econometrics. The American Economic Review 73(1):31-43.
+\\
+\\
+Leamer, Edward E. and Herman Leonard. 1983. Reporting the Fragility of Regression Estimates. The Review of Economics and Statistics 65(2):306-317.
+\\
+\\
+Long, J. Scott and Laurie H. Ervin. 2000. Using Heteroscedasticity Consistent Standard Errors in the Linear Regression Model. The American Statistician 54(3):217-224.
+\\
+\\
+Mason, William M. 1991. Freedman is Right as Far as He Goes, but THere is More, and It's Worse. Statisticians Could Help. Sociological Methodology 21:337-357.
+\\
+\\
+Miller, Alan. 2002. Subset Selection in Regression, 2nd edition. Boca Raton, FL: Chapman \& Hall/CRC.
+\\
+\\
+Montgomery, Jacob and Santiago Olivella. forthcoming. Tree-based Models for Political Science Data. American Journal of Political Science .
+\\
+\\
+Pregibon, Daryl and Yehuda Vardi. 1985. Estimating Optimal Transformations for Multiple Regression and Correlation: Comment. Journal of the American Statistical Association 80(391):598-601.
+\\
+\\
+Resseguier, Noemie, Roch Giorgi and Xavier Paoletti. 2011. Sensitivity Analysis When Data Are Missing Not-at-random. Epidemiology 22(2):282.
+\\
+\\
+Ronchetti, Elvezio, Christopher Field and Wade Blanchard. 1997. Robust Linear Model Selection by Cross-validation. Journal of the American Statistical Association 92(439):1017-1023.
+\\
+\\
 
 %\bibliographystyle{plainnat}
 %\bibliography{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/Bahamonde_BibTex2013}
